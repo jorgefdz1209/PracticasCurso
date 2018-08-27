@@ -1,5 +1,10 @@
 package eje1;
 
+/**
+ * Clase con el negocio de la calculadora 
+ * @author Jorge
+ *
+ */
 public class Calculadora {
 	
 	/**

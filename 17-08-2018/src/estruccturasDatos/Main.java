@@ -9,6 +9,11 @@ import java.util.Set;
 
 import javax.management.ListenerNotFoundException;
 
+/**
+ * Clase main utilizada como prueba
+ * @author Antoinette1
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

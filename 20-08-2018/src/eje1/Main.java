@@ -1,5 +1,11 @@
 package eje1;
 
+
+/**
+ * Clase main como prueba de utilizacion 
+ * @author Jorge 
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

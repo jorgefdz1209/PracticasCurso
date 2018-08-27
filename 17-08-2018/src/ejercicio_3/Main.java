@@ -3,6 +3,11 @@ package ejercicio_3;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Clase main con la utilizacion de HashSet----
+ * @author Jorge
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

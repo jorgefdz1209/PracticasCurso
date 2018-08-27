@@ -2,6 +2,11 @@ package com.netasystem.calculadora.main;
 
 import com.netasystem.calculadora.business.Calculadora;
 
+/**
+ * Clase main de ejemplo de uso
+ * @author Jorge
+ *
+ */
 public class Main {
 	public static void main(String[] args) {
 		Calculadora c= new Calculadora();

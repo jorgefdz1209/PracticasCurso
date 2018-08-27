@@ -6,6 +6,11 @@ import Polimorfismo.ProfMate;
 import Polimorfismo.Profesor;
 
 
+/**
+ * Clase de prueba de el ejercicio 
+ * @author Jorge
+ *
+ */
 public class Main {
 
   public static void main(String[] args) {
