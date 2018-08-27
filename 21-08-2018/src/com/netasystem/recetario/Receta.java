@@ -19,8 +19,8 @@ public class Receta {
 	 * Contructor con los parametros necesarios para el funcionamiento correcto de la clase
 	 * 
 	 * @param autor   Nombre del autor
-	 * @param ingredientes Lista de ingrediente para la receta List<Ingredientes>
-	 * @param procedimiento Lista de procedimentos para la receta List<String>
+	 * @param ingredientes Lista de ingrediente para la receta List Ingredientes
+	 * @param procedimiento Lista de procedimentos para la receta List String
 	 * 
 	 */
 	public Receta(String autor, List<Ingrediente> ingredientes, List<String> procedimiento) {
@@ -36,7 +36,7 @@ public class Receta {
 	
 	/**
 	 * Muestra el procedimiento para la receta 
-	 * @return 
+	 * 
 	 */
 	public void mostrarProcedimiento() {
 		for(String s : procedimiento) {
@@ -69,28 +69,28 @@ public class Receta {
 	}
 	/**
 	 * Regresa la lista de ingredientes de un receta 
-	 * @return List<Ingredientes> Lista de ingredientes de la receta
+	 * @return List Ingredientes Lista de ingredientes de la receta
 	 */
 	public List<Ingrediente> getIngredientes() {
 		return ingredientes;
 	}
 	/**
 	 * Asigna la lista de ingredientes a una receta
-	 * @param ingredientes List<Ingrediente>
+	 * @param ingredientes List Ingrediente
 	 */
 	public void setIngredientes(List<Ingrediente> ingredientes) {
 		this.ingredientes = ingredientes;
 	}
 	/**
 	 *Regresa la lista del procedimiento a seguir en la receta  
-	 * @return List<String>
+	 * @return List String
 	 */
 	public List<String> getProcedimiento() {
 		return procedimiento;
 	}
 	/**
 	 * Asigna la lista de procedimientos a seguir en la receta 
-	 * @param procedimiento List<String>
+	 * @param procedimiento List String
 	 */
 	public void setProcedimiento(List<String> procedimiento) {
 		this.procedimiento = procedimiento;

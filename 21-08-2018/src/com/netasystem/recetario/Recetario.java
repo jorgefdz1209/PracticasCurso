@@ -57,31 +57,31 @@ public class Recetario {
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * regresa la lista de las lleves existentes en el mapa 
+	 * @return Set String con las llaves del mapa 
 	 */
 	public Set<String> listaLLaves() {
 		return listado.keySet();
 	}
 	/**
-	 * 
-	 * @param n
-	 * @return
+	 * Metodo para checar si existe el nombre dentro de la mapa 
+	 * @param n String con el nombre de la receta
+	 * @return boolean con la existencia del nombre de la receta 
 	 */
 	public boolean checkNombre(String n) {
 		return this.listado.containsKey(n);
 	}
 	/**
-	 * 
-	 * @return
+	 * Metodo de retorno para el mapa de las recetas
+	 * @return Map String, Recetas 
 	 */
 	public Map<String, Receta> getListado() {
 		return listado;
 	}
 
 	/**
-	 * 
-	 * @param listado
+	 * Agrega el listado de recetas 
+	 * @param listado Map String, Receta
 	 */
 	public void setListado(Map<String, Receta> listado) {
 		this.listado = listado;
