@@ -31,12 +31,12 @@ public class Corredor implements Runnable{
 			while(corre && !carrera.isFlagTeamF()) {
 				boolean aquired = false;
 				try {
-					Thread.sleep(150);
+					Thread.sleep(1500);
 					if (!carrera.isFlagTeamF()) {
 						aquired = carrera.aquireFlag(this.name);	
 					}
 					if(aquired) {
-						Thread.sleep(200);
+						Thread.sleep(2000);
 						carrera.releaseFlag();
 						this.corre = false;
 						equipo.corredorTermina();

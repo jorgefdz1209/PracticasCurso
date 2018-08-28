@@ -1,5 +1,8 @@
 package com.netasystems.clases;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Clase Carrera con la bandera que gestiona la salida de los corredores de la carrera. 
  * 
@@ -8,6 +11,7 @@ package com.netasystems.clases;
  */
 public class Carrera {
 	
+	List<Equipo> equipos = new ArrayList<Equipo>();
 	private boolean flagTaken = false;
 	private boolean flagTeamF = false;
 
@@ -48,4 +52,14 @@ public class Carrera {
 		this.flagTeamF = flagTeamF;
 	}
 	
+	
+	public void addTeam(Equipo e) {
+		equipos.add(e);
+	}
+	
+	public void mostrarRestantes() {
+		for(Equipo e : equipos) {
+			System.out.println("Equipo "+e.toString()+" restantes: "+e.getPendientes());
+		}
+	}
 }

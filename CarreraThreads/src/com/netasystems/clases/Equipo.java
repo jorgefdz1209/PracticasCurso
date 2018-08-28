@@ -37,6 +37,7 @@ public class Equipo implements Runnable {
 		this.pendientes--;
 		if(pendientes == 0) {
 			carrera.setFlagTeamF(true);
+			carrera.mostrarRestantes();
 			System.out.println("El equipo: "+this.name + " ha terminado!!!!");
 		}
 	}
@@ -49,7 +50,7 @@ public class Equipo implements Runnable {
 	public void run() {
 		System.out.println("Equipo: "+ this + " ha iniciado!!!");
 		try {
-			Thread.sleep(100);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
