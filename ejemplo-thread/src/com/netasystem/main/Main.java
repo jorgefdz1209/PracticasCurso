@@ -13,5 +13,7 @@ public class Main {
 	    }
 	    System.out.println("Estado de Thread " + t.getName() + " = " + t.getState());
 	    System.out.println("qwerty " + t2.getName() + " = " +t2.getState());
+	    
+	    //Hola weee
 	}
 }
