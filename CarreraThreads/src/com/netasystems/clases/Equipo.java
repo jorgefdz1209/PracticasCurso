@@ -5,9 +5,9 @@ import java.util.List;
 
 
 
-/**Clase de equipo para la carrera a iniciar con la lista de corredores a "participar" 
+/**
+ * Clase de equipo para la carrera a iniciar con la lista de corredores a "participar" 
  * @author Antoinette1
- *
  */
 public class Equipo implements Runnable {
 	private List<Corredor> corredores;
@@ -30,6 +30,7 @@ public class Equipo implements Runnable {
 			corredores.add(c);
 		}
 	}
+	
 	/**
 	 * Metodo para anunciar cuando un "corredor" termina y sale del equipo
 	 */
@@ -37,7 +38,6 @@ public class Equipo implements Runnable {
 		this.pendientes--;
 		if(pendientes == 0) {
 			carrera.setFlagTeamF(true);
-			carrera.mostrarRestantes();
 			System.out.println("El equipo: "+this.name + " ha terminado!!!!");
 		}
 	}

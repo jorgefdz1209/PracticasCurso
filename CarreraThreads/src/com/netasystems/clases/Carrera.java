@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase Carrera con la bandera que gestiona la salida de los corredores de la carrera. 
+ * Gestiona la salida de los corredores de la carrera. 
  * 
  * @author Jorge 
  *
  */
 public class Carrera {
 	
-	List<Equipo> equipos = new ArrayList<Equipo>();
 	private boolean flagTaken = false;
 	private boolean flagTeamF = false;
 
@@ -21,7 +20,7 @@ public class Carrera {
 	 * @return regresa el estado de la bandera si es tomada o dejada por alguno de los corredores.
 	 */
 	public synchronized boolean aquireFlag(String threadName) {
-		if(flagTaken) {
+		if(flagTaken) { // 
 			return false;
 		}
 		System.out.println("Bandera tomada por : "+threadName);
@@ -50,16 +49,5 @@ public class Carrera {
 	 */
 	public synchronized void setFlagTeamF(boolean flagTeamF) {
 		this.flagTeamF = flagTeamF;
-	}
-	
-	
-	public void addTeam(Equipo e) {
-		equipos.add(e);
-	}
-	
-	public void mostrarRestantes() {
-		for(Equipo e : equipos) {
-			System.out.println("Equipo "+e.toString()+" restantes: "+e.getPendientes());
-		}
 	}
 }
