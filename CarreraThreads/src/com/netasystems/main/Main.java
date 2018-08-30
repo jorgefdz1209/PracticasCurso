@@ -6,6 +6,7 @@ import com.netasystems.clases.Carrera;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		System.out.println("Carrera de Netasystems!!!!");
 		Carrera carrera = new Carrera();
 		Equipo eqAzul = new Equipo(carrera, "Azul");
@@ -23,6 +24,7 @@ public class Main {
 		teRo.start();
 		teNa.start();
 		teVe.start();
+		
 	}
 
 }
