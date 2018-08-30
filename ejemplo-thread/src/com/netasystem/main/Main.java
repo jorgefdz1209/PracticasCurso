@@ -1,7 +1,7 @@
 package com.netasystem.main;
 
 import com.netasystem.threads.TestThread;
-
+ // saludo Atentamente Osvi 
 public class Main {
 	public static void main(String[] args) {
 		TestThread t = new TestThread("A");
