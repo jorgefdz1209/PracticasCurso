@@ -5,19 +5,65 @@ import java.util.List;
 
 import net.netasystem.dao.CatTipoFabricaDAO;
 import net.netasystem.domain.CatTipoFabrica;
-
+/**
+ * Service for manipulation of data in database 
+ * @author Jorge Saul
+ *
+ */
 public class CatTipoFabricaService {
 	
 	private CatTipoFabricaDAO dao;
 	
+	/**
+	 * Creation of CatTipoFabricaDAO 
+	 * @throws ClassNotFoundException if is don´t possible have the class 
+	 * @throws SQLException if not possible get connection whit the database
+	 */
 	public CatTipoFabricaService() throws ClassNotFoundException, SQLException {
 		dao=new CatTipoFabricaDAO();
 	}
-	public void cierra() throws SQLException {
+	
+	/**
+	 * Close connection of CatTipoFabricaDAO
+	 * @throws SQLException if not possible get connection whit the database
+	 */
+	public void close() throws SQLException {
 		dao.destroy();
 	}
 	
+	/**
+	 * Get all records of table in database 
+	 * @return List contains all the records in the table in the database 
+	 * @throws SQLException if not possible get connection whit the database
+	 */
 	public List<CatTipoFabrica> getAllRecords() throws SQLException{
 		return dao.getAllRecords();
+	}
+	
+	/**
+	 * add new record in database 
+	 * @param record object type CatTipoFabrica for the arguments in the sentence sql 
+	 * @throws SQLException if not possible get connection whit the database
+	 */
+	public void addRecord(CatTipoFabrica record) throws SQLException {
+		dao.addRecord(record);
+	}
+	
+	/**
+	 * update record in the database  
+	 * @param record for the parameters for update 
+	 * @throws SQLException if not possible get connection whit the database
+	 */
+	public void updateRecord(CatTipoFabrica record) throws SQLException{
+		dao.updateRecord(record);
+	}
+	
+	/**
+	 * delete record in the database 
+	 * @param record for the parameters for delete 
+	 * @throws SQLException if not possible get connection whit the database
+	 */
+	public void deleteRecord(CatTipoFabrica record) throws SQLException{
+		dao.deleteRecord(record);
 	}
 }
