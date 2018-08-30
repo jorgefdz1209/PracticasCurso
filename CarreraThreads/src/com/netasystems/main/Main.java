@@ -7,6 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Carrera de Netasystems!!!!");
+		System.out.println("Carrera de Netasystems!!!!");
 		Carrera carrera = new Carrera();
 		Equipo eqAzul = new Equipo(carrera, "Azul");
 		Equipo eqAmarillo = new Equipo(carrera, "Amarillo");
