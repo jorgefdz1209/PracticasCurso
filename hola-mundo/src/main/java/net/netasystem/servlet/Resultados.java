@@ -37,7 +37,7 @@ public class Resultados extends HttpServlet {
 			lista = service.getAllRecords();
 			response.getWriter().append("<html>");
 			response.getWriter().append("<body>");
-			response.getWriter().append("<style type=\"text/css\">table tr:nth-child(even) { background-color: #eee;}table tr:nth-child(odd) { background-color: #fff;}</style>");
+			response.getWriter().append("<style type=\"text/css\">table th:{background-color: #eee;}table tr:nth-child(even) { background-color: #eee;}table tr:nth-child(odd) { background-color: #fff;}</style>");
 			response.getWriter().append("<table class=\"egt\">");
 			response.getWriter().append("<tbody>");
 			response.getWriter().append("<tr>");
