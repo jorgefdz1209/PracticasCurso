@@ -18,12 +18,15 @@
 		<tbody>
 			<tr>
 				<td>Request</td>
+				<td>${parametro0}</td>
 			</tr>
 			<tr>
 				<td>Session</td>
+				<td>${parametro1}</td>
 			</tr>
 			<tr>
 				<td>Application</td>
+				<td>${parametro2}</td>
 			</tr>
 		</tbody>
 	</table>

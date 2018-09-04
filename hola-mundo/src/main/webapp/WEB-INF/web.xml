@@ -10,4 +10,14 @@
     <servlet-name>Resultados</servlet-name>
     <url-pattern>/Resultados</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Scope</display-name>
+    <servlet-name>Scope</servlet-name>
+    <servlet-class>net.netasystem.servlet.Scope</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Scope</servlet-name>
+    <url-pattern>/Scope</url-pattern>
+  </servlet-mapping>
 </web-app>
