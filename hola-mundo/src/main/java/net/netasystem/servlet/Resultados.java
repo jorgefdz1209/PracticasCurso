@@ -14,6 +14,7 @@ import net.netasystem.service.CatTipoFabricaService;
 
 /**
  * Servlet implementation class Resultados
+ * @author Netasystems/Saul
  */
 public class Resultados extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -33,10 +34,12 @@ public class Resultados extends HttpServlet {
 		CatTipoFabricaService service = null;
 		List<CatTipoFabrica> lista;		
 		try {
+			//Generacion del codigo HTML desde el metodo doGet para le creacion de la tabla 
 			service = new CatTipoFabricaService();
 			lista = service.getAllRecords();
 			response.getWriter().append("<html>");
 			response.getWriter().append("<body>");
+			//CSS para la tabla
 			response.getWriter().append("<style type=\"text/css\">table th:{background-color: #eee;}table tr:nth-child(even) { background-color: #eee;}table tr:nth-child(odd) { background-color: #fff;}</style>");
 			response.getWriter().append("<table class=\"egt\">");
 			response.getWriter().append("<tbody>");
@@ -47,6 +50,7 @@ public class Resultados extends HttpServlet {
 			response.getWriter().append("<th>Fecha Modificaci&oacuten</th>");
 			response.getWriter().append("<th>Id Usuario</th>");
 			response.getWriter().append("</tr>");
+			//foreach para cada uno de los elementos de la base de datos 
 			for (CatTipoFabrica c : lista) {
 				response.getWriter().append("<tr>");
 				response.getWriter().append("<td>"+c.getIdTipoFabrica()+"</td>");

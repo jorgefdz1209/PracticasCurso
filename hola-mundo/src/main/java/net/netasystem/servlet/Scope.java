@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Scope
+ * @author Netasystems/Saul 
  */
 public class Scope extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -24,7 +25,7 @@ public class Scope extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String scope = request.getParameter("scope");
+		String scope = request.getParameter("scope"); //se agrega el 
 		switch (scope) {
 		case "request":
 			System.out.println("Estableciendo parametro en request");
