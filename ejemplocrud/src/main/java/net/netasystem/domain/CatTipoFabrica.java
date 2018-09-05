@@ -2,31 +2,46 @@ package net.netasystem.domain;
 
 import java.util.Date;
 /**
- * Bean of the table 
- * @author Jorge Saul 
+ * Bean de la tabla 
+ * @author Netasystems/Jorge Saul 
  */
 public class CatTipoFabrica {
+	/**
+	 * Tipo {@link Long} para el id 
+	 */
 	private long idTipoFabrica;
+	/**
+	 * Tipo {@link String} para el nombre del tipo
+	 */
 	private String nombre;
+	/**
+	 * Tipo {@link Character} para el estado de la tupla 
+	 */
 	private Character status;
+	/**
+	 * Tipo {@link Date} para la fecha de modificación de la tupla 
+	 */
 	private Date fechaDeModificacion;
+	/**
+	 * Tipo {@link Long} para el Id del usuario que realizó la modificación 
+	 */
 	private Long idUsuario;
 	
 	
 	/**
-	 * Constructor without params  
+	 * Constructor sin parametros o por defecto 
 	 */
 	public CatTipoFabrica() {
 		super();
 	}
 	
 	/**
-	 * Constructor with all the parameters 
-	 * @param idTipoFabrica Long id in the table 
-	 * @param nombre String Description of type of factory 
-	 * @param status Char status of  the row 
-	 * @param fechaDeModificacion Date modification of the row 
-	 * @param idUsuario Long id of who do it the last modification 
+	 * Constructor con todos los parametros 
+	 * @param idTipoFabrica {@link Long} para el id de la tupla 
+	 * @param nombre {@link String} para el nombre del tipo de fabrica 
+	 * @param status {@link Character} para el estado del la tupla 
+	 * @param fechaDeModificacion {@link Date} para la fecha de modificación de la tupla 
+	 * @param idUsuario {@link Long} el id del usuario que hizo la modificación 
 	 */
 	public CatTipoFabrica(long idTipoFabrica, String nombre, Character status, Date fechaDeModificacion, long idUsuario) {
 		super();
@@ -37,79 +52,81 @@ public class CatTipoFabrica {
 		this.idUsuario = idUsuario;
 	}
 	
+	
+	
+	
 	/**
-	 * Method of get idTipoFabrica 
-	 * @return Long idTipofabrica 
+	 * Devuelve el idTipoFabrica 
+	 * @return el idTipoFabrica
 	 */
 	public long getIdTipoFabrica() {
 		return idTipoFabrica;
 	}
-	
+
 	/**
-	 * Method of set idTipodfabrica 
-	 * @param idTipoFabrica Long the id for set 
+	 * Asignar el idTipoFabrica 
+	 * @param idTipoFabrica el idTipoFabrica a asignar 
 	 */
 	public void setIdTipoFabrica(long idTipoFabrica) {
 		this.idTipoFabrica = idTipoFabrica;
 	}
+
 	/**
-	 * Method of get nombre 
-	 * @return String contains the param nombre
+	 * @return the nombre
 	 */
 	public String getNombre() {
 		return nombre;
 	}
+
 	/**
-	 * Method of set nombre 
-	 * @param nombre String for set 
+	 * @param nombre the nombre to set
 	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	/**
-	 * Method of get status 
-	 * @return Character with status 
+	 * @return the status
 	 */
 	public Character getStatus() {
 		return status;
 	}
+
 	/**
-	 * Method of set status 
-	 * @param status for set 
+	 * @param status the status to set
 	 */
 	public void setStatus(Character status) {
 		this.status = status;
 	}
+
 	/**
-	 * Method of get fechaModificacion 
-	 * @return Date with the date of last modification 
+	 * @return the fechaDeModificacion
 	 */
 	public Date getFechaDeModificacion() {
 		return fechaDeModificacion;
 	}
+
 	/**
-	 * Method of set fechaModificacion 
-	 * @param fechaDeModificacion for set 
+	 * @param fechaDeModificacion the fechaDeModificacion to set
 	 */
 	public void setFechaDeModificacion(Date fechaDeModificacion) {
 		this.fechaDeModificacion = fechaDeModificacion;
 	}
+
 	/**
-	 * Method of get idUsuario
-	 * @return Long idUsuario the last modofication 
+	 * @return the idUsuario
 	 */
-	public long getIdUsuario() {
+	public Long getIdUsuario() {
 		return idUsuario;
 	}
+
 	/**
-	 * Method of set idUsuario 
-	 * @param idUsuario for set 
+	 * @param idUsuario the idUsuario to set
 	 */
 	public void setIdUsuario(Long idUsuario) {
 		this.idUsuario = idUsuario;
 	}
-	
-	
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#hashCode()
 	 */

@@ -6,16 +6,18 @@ import java.util.List;
 import net.netasystem.dao.CatTipoFabricaDAO;
 import net.netasystem.domain.CatTipoFabrica;
 /**
- * Service for manipulation of data in database 
- * @author Jorge Saul
+ * Servicio de manipulación de datos dentro de la base de datos (enmascaración) 
+ * @author Netasystems/wJorge Saul
  *
  */
 public class CatTipoFabricaService {
-	
+	/**
+	 * DAO para la conexión a base de datos 
+	 */
 	private CatTipoFabricaDAO dao;
 	
 	/**
-	 * Creation of CatTipoFabricaDAO 
+	 * Creaci&oacute;n de los servicios con la inicialici&oacute;n de  
 	 * @throws ClassNotFoundException if is don´t possible have the class 
 	 * @throws SQLException if not possible get connection whit the database
 	 */
