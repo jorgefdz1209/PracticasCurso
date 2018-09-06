@@ -1,17 +1,19 @@
 package net.netasystems.business;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author NetaSystems/Jorge Saul
+ *
+ */
+@Component
 public class JorgeSaul implements Programmer{
+	@Autowired
+	@Qualifier("php")
 	private Languaje languaje;
 	
-	/**
-	 * Constructor con parametros 
-	 * @param languaje a asignar
-	 */
-	public JorgeSaul(Languaje languaje) {
-		super();
-		this.languaje = languaje;
-	}
-
 	/**
 	 * Obtener la variable languaje 
 	 * @return la variable languaje tipo Languaje
@@ -31,9 +33,11 @@ public class JorgeSaul implements Programmer{
 
 
 
+	/* (non-Javadoc)
+	 * @see net.netasystems.business.Programmer#hackTheWorld()
+	 */
 	public String hackTheWorld() {
-		// TODO Auto-generated method stub
-		return "Program in: "+languaje.description()+" Versio: "+languaje.version();
+		return "Program in: "+languaje.description()+" Version: "+languaje.version();
 	}
 
 }

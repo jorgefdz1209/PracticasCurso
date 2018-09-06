@@ -1,18 +1,36 @@
 package net.netasystems.business;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PerlLanguaje implements Languaje {
 
-    private String descriptionLanguage;
+    /**
+     * Parametro tipo String
+     */
+    private String descriptionLanguage="PERL!!!!!!";
+    /**
+     * Parametro tipo String
+     */
     private String version;
 
+    /**
+     * @return
+     */
     public String getDescriptionLanguage() {
         return descriptionLanguage;
     }
 
+    /**
+     * @param descriptionLanguage
+     */
     public void setDescriptionLanguage(String descriptionLanguage) {
         this.descriptionLanguage = descriptionLanguage;
     }
 
+    /* (non-Javadoc)
+     * @see net.netasystems.business.Languaje#description()
+     */
     public String description() {
         return descriptionLanguage;
     }

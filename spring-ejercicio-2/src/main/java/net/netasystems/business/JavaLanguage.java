@@ -1,5 +1,8 @@
 package net.netasystems.business;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class JavaLanguage implements Languaje {
 	private String version;
 	
