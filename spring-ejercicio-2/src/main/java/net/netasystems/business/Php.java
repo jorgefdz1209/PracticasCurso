@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author NetaSystems/Antoinette1
- *
+ * Simulacion de la implementacion del lenguaje PHP para programar 
  */
 @Component
 public class Php implements Languaje{

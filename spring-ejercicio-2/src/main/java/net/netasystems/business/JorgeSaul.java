@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author NetaSystems/Jorge Saul
- *
+ * Clase que simula un programador llamado JORGE SAUL 
  */
 @Component
 public class JorgeSaul implements Programmer{

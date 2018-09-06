@@ -6,7 +6,7 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<context:annotation-config></context:annotation-config>
+	<context:annotation-config></context:annotation-config><!-- XML utilizando las anotaciones  -->
 	<context:component-scan base-package="net.netasystems.business"></context:component-scan>
     
 </beans>
