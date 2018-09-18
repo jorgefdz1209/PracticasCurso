@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <servlet>
+    <description></description>
+    <display-name>SelecFabrica</display-name>
+    <servlet-name>SelecFabrica</servlet-name>
+    <servlet-class>net.netasystems.servlet.SelecFabrica</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelecFabrica</servlet-name>
+    <url-pattern>/SelecFabrica</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PruebaScopes</display-name>
+    <servlet-name>PruebaScopes</servlet-name>
+    <servlet-class>net.netasystems.servlet.PruebaScopes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PruebaScopes</servlet-name>
+    <url-pattern>/PruebaScopes</url-pattern>
+  </servlet-mapping>
+</web-app>
